@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8888ff"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="附近热点"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/surround_button_gas_station"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#aaaaff"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:onClick="gas_station"
+        android:padding="5dp"
+        android:text="加油站"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff" />
+
+    <Button
+        android:id="@+id/surround_button_4s_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aaaaff"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:onClick="four_s_store"
+        android:padding="5dp"
+        android:text="4S店"
+        android:textSize="18dp" />
+
+
+</LinearLayout>

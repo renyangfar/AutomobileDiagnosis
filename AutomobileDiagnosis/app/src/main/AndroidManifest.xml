@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.development.qcqyf.automobilediagnosis">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".tools.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_car"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".tools.LocationService" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="EUeLwaN8W5ntC18VsgMc7iLiFdGWhdum" />
+        <!-- myn2pZf2uNVGvp4QesYGnYvlQFYV96Nh -->
+        <!-- EUeLwaN8W5ntC18VsgMc7iLiFdGWhdum -->
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CarHeathActivity"
+            android:label="@string/title_activity_carHeath"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MonitorCurrentActivity"
+            android:label="@string/title_activity_monitor_current"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MonitorHistoryActivity"
+            android:label="@string/title_activity_monitor_history"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AssistActivity"
+            android:label="@string/title_activity_assist"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".tools.FaultNumQueryActivity"
+            android:label="@string/title_activity_query_fault"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".tools.CarNumQueryActivity"
+            android:label="@string/title_activity_query_carNum"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.SpeedSettingViewActivity"
+            android:label="@string/title_activity_speed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.TempSettingViewActivity"
+            android:label="@string/title_activity_waterTemp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.TiredSettingViewActivity"
+            android:label="@string/title_activity_fatigueDriving"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".map.QuerryGasStation" />
+        <activity android:name=".map.Querry4sStore" />
+        <activity
+            android:name=".SurroundServiceActivity"
+            android:label="@string/title_activity_surroundService"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".map.DrivingSearchActivity" />
+        <activity android:name=".map.LocationForBaiduGPSActivity" />
+        <activity
+            android:name=".tools.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".tools.LoveCarBookActivity"
+            android:label="@string/title_activity_love_car_book"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ZhihuActivity" />
+        <activity
+            android:name=".MycarActivity"
+            android:label="我的汽车" />
+        <activity
+            android:name=".tools.ProvinceCodeActivity"
+            android:label="各省简称查询" />
+        <activity android:name=".tools.JsonQuery" />
+        <activity android:name=".tools.RegisterActivity"
+            android:label="注册"></activity>
+    </application>
+
+</manifest>

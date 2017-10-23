@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mycar"
+            android:icon="@drawable/ic_directions_car_black_24dp"
+            android:title="我的汽车" />
+        <item
+            android:id="@+id/nav_love_carbook"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="爱车宝典" />
+        <item
+            android:id="@+id/nav_zhihu"
+            android:icon="@drawable/ic_zhihu"
+            android:title="知乎专场" />
+        <item
+            android:id="@+id/nav_data"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="朋友约车" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="常用工具" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

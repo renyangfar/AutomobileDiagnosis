@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+  <container path="com.genuitec.runtime.library/com.genuitec.generic_7.0">
+    <jar-attrs id="data/libraryset/EE_7//javaee-api-7.0.jar">
+      <attribute name="source-path" value="E:\Android\AndroidStudy\黑马视频教程\安卓74期\01_web基础(day01-day13）\web基础(1)\day06\day06-xml解析1\resource\tomcat\tomcat\apache-tomcat-6.0.35-src.zip"/>
+      <attribute name="source-path-root"/>
+      <attribute name="javadoc_location" value="http://docs.oracle.com/javaee/7/api/"/>
+    </jar-attrs>
+  </container>
+</project>

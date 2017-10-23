@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#aaaaff"
+        android:drawableLeft="@android:drawable/ic_menu_compass"
+        android:onClick="getlocation"
+        android:padding="5dp"
+        android:text="我的位置"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#aaaaff"
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:onClick="faultnum_query"
+        android:padding="5dp"
+        android:text="故障码查询"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#aaaaff"
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:onClick="car_num_query"
+        android:padding="5dp"
+        android:text="车牌号归属地查询"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#aaaaff"
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:onClick="provinceCode_query"
+        android:padding="5dp"
+        android:text="中国各省市简称查询"
+        android:textSize="18dp" />
+
+
+</LinearLayout>
